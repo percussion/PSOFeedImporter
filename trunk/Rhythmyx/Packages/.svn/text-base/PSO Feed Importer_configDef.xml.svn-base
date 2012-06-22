@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+   <!-- Currently we are only configuring the Keywords.   -->
+   <bean id="pso_Feed_Import_FolderLayouts" class="com.percussion.rx.config.impl.PSObjectConfigHandler">
+      <property name="name" value="pso_Feed_Import_FolderLayouts"/>
+      <property name="type" value="KEYWORD_DEF"/>
+      <property name="propertySetters">
+         <bean class="com.percussion.rx.config.impl.PSKeywordSetter">
+            <property name="properties">
+               <map>
+                  <entry key="choicePairs" value="${perc.PSO Feed Importer.FolderLayouts}"/>
+               </map>
+            </property>
+         </bean>
+      </property>
+   </bean>
+   <bean id="pso_Feed_Import_Templates" class="com.percussion.rx.config.impl.PSObjectConfigHandler">
+      <property name="name" value="pso_Feed_Import_Templates"/>
+      <property name="type" value="KEYWORD_DEF"/>
+      <property name="propertySetters">
+         <bean class="com.percussion.rx.config.impl.PSKeywordSetter">
+            <property name="properties">
+               <map>
+                  <entry key="choicePairs" value="${perc.PSO Feed Importer.Import_Templates}"/>
+               </map>
+            </property>
+         </bean>
+      </property>
+   </bean>
+ </beans>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/psolib/!svn/ver/5288/PSOFeedImporter/trunk
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psolib/!svn/ver/5288/PSOFeedImporter/trunk/build.xml
+END
+Extensions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/psolib/!svn/ver/5239/PSOFeedImporter/trunk/Extensions.xml
+END
+PSOFeedImporter-6.7.zip
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/psolib/!svn/ver/5288/PSOFeedImporter/trunk/PSOFeedImporter-6.7.zip
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/psolib/!svn/ver/5145/PSOFeedImporter/trunk/license.txt
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psolib/!svn/ver/5288/PSOFeedImporter/trunk/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psolib/!svn/ver/5288/PSOFeedImporter/trunk/.project
+END
+build.number
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psolib/!svn/ver/5288/PSOFeedImporter/trunk/build.number
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/psolib/!svn/ver/5225/PSOFeedImporter/trunk/ivy.xml
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/psolib/!svn/ver/5145/PSOFeedImporter/trunk/ivysettings.xml
+END
+ivy-local.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/psolib/!svn/ver/5145/PSOFeedImporter/trunk/ivy-local.properties
+END
+ivy-local.sample.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/psolib/!svn/ver/5145/PSOFeedImporter/trunk/ivy-local.sample.properties
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psolib/!svn/ver/5225/PSOFeedImporter/trunk/deploy.xml
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psolib/!svn/ver/5225/PSOFeedImporter/trunk/readme.txt
+END

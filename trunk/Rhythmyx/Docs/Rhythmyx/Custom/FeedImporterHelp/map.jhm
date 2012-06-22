@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='iso-8859-1' ?>
+<map version="1.0">
+    <mapID target="about" url="Topics/about.htm" />
+    <mapID target="setupfeed" url="Topics/setupfeed.htm" />
+    <mapID target="importfeed" url="Topics/importfeed.htm" />
+    <mapID target="license" url="Topics/license.htm" />  
+   </map>
+
