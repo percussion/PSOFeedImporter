@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="ivylib/activation.jar"/>
 	<classpathentry kind="lib" path="ivylib/antlr.jar"/>
 	<classpathentry kind="lib" path="ivylib/aopalliance.jar"/>
@@ -64,23 +64,8 @@
 	<classpathentry kind="lib" path="ivylib/Tidy.jar"/>
 	<classpathentry kind="lib" path="ivylib/jsr311-api.jar"/>
 	<classpathentry kind="lib" path="ivylib/rxdeployer.jar"/>
-	<classpathentry kind="lib" path="ivylib/cglib.jar"/>
-	<classpathentry kind="lib" path="ivylib/cxf-bundle.jar"/>
-	<classpathentry kind="lib" path="ivylib/icu4j.jar"/>
-	<classpathentry kind="lib" path="ivylib/jaxen.jar"/>
-	<classpathentry kind="lib" path="ivylib/jsoup.jar"/>
-	<classpathentry kind="lib" path="ivylib/mail.jar"/>
-	<classpathentry kind="lib" path="ivylib/PSOToolkit.jar" sourcepath="/PSOToolkit67/lib/PSOToolkit-6.7.jar"/>
 	<classpathentry kind="lib" path="ivylib/modules.jar"/>
-	<classpathentry kind="lib" path="ivylib/tagsoup.jar"/>
-	<classpathentry kind="lib" path="ivylib/xalan.jar"/>
-	<classpathentry kind="lib" path="ivylib/xmlParserAPIs.jar"/>
-	<classpathentry kind="lib" path="ivylib/xom.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ContentREST-6.7"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/PSOToolkit67"/>
-	<classpathentry kind="lib" path="C:/Users/stevenharris/workspace/ContentREST-6.7/ivylib/activation.jar"/>
-	<classpathentry kind="lib" path="C:/Users/stevenharris/workspace/ContentREST-6.7/ivylib/xom.jar"/>
-	<classpathentry kind="lib" path="/ContentREST-6.7/src/com/percussion/pso/imp"/>
-	<classpathentry kind="lib" path="/ContentREST-6.7/src/com/percussion/pso/restservice"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PSOToolkit"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

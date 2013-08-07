@@ -40,7 +40,8 @@
 	<property name="bin" location="bin"/>
 	<property name="ivylib" location="ivylib" /> 
 	<property name="javadoc" location="javadoc" />
-	
+	<property name="contentrs-lib" location="../ContentREST/lib/contentrs-1.0.jar" />
+		
 	<!-- used for running Windows commands --> 
 	<property name="comspec" location="${env.ComSpec}"/>
 	<property name="cdrive" location="${env.USERPROFILE}"/> 
@@ -52,7 +53,8 @@
 		 <fileset dir="${ivylib}">
 		 	<include name="**.jar"/>
 		 </fileset>
-		</path>
+	      <pathelement path="${contentrs-lib}"/>
+	</path>
 	
 
 	<target name="init">
