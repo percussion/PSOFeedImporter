@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<index version="1.0">
+    <indexitem text="about" target="about"/>
+    <indexitem text="feed" target="setupfeed"/>
+    <indexitem text="import" target="importfeed" />
+    <indexitem text="license" target="license"/>
+</index>
+

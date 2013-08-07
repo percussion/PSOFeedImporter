@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXExtensionHandlerConfiguration handlerName="Java">
+<Extension categorystring="scheduledTask" context="global/percussion/task/" deprecated="no" handler="Java" name="pso_feedImportTask" restoreRequestParamsOnError="no">
+  <initParam name="com.percussion.user.description">This task will execute an import of the Feed Definition that matches the sys_contentid parameter.</initParam> 
+  <initParam name="com.percussion.extension.version">1</initParam> 
+  <initParam name="className">com.percussion.pso.feedimporter.PSOFeedImporterTask</initParam> 
+  <initParam name="com.percussion.extension.reentrant">yes</initParam> 
+  <interface name="com.percussion.services.schedule.IPSTask" /> 
+- <PSXExtensionParamDef id="0">
+  <name>sys_contentid</name> 
+  <dataType>java.lang.Integer</dataType> 
+  <description>Specifies the Content ID of the Feed Definition to process using this schedule.</description> 
+  </PSXExtensionParamDef>
+  <suppliedResources /> 
+  </Extension>
+  <Extension categorystring="scheduledTask" context="global/percussion/task/" deprecated="no" handler="Java" name="pso_feedImportPurgeTask" restoreRequestParamsOnError="no">
+  <initParam name="com.percussion.user.description">This task will purge any Feed Items from the system that have lived past their expiration days. Items with an expiration days of 0 are ignored.</initParam> 
+  <initParam name="com.percussion.extension.version">1</initParam> 
+  <initParam name="className">com.percussion.pso.feedimporter.PSOFeedImporterPurgeTask</initParam> 
+  <initParam name="com.percussion.extension.reentrant">yes</initParam> 
+  <interface name="com.percussion.services.schedule.IPSTask" /> 
+  <suppliedResources /> 
+  </Extension>
+  <Extension categorystring="scheduledTask" context="global/percussion/task/" deprecated="no" handler="Java" name="pso_feedImportByTypeTask" restoreRequestParamsOnError="no">
+  	<initParam name="com.percussion.user.description">This task will execute a feed import for every content item of the specified content type.  Useful when maintaining one schedule for all feeds or for &quot;magnet&quot; type of feed configurations.</initParam> 
+  	<initParam name="com.percussion.extension.version">1</initParam> 
+  	<initParam name="className">com.percussion.pso.feedimporter.PSOFeedImportSingleTypeTask</initParam> 
+  	<initParam name="com.percussion.extension.reentrant">yes</initParam> 
+  	<interface name="com.percussion.services.schedule.IPSTask" /> 
+- 	<PSXExtensionParamDef id="0">
+  		<name>content_type</name> 
+  		<dataType>java.lang.String</dataType> 
+  		<description>Specifies the name of the content type to process.</description> 
+  	</PSXExtensionParamDef>
+  	<suppliedResources /> 
+  </Extension>
+</PSXExtensionHandlerConfiguration>

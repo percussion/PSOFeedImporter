@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<SolutionConfigurations xsi:noNamespaceSchemaLocation="localConfig.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" publisherName="Percussion Software, Inc." publisherPrefix="perc">
+<SolutionConfig name="PSO Feed Importer"> 
+
+<!-- The following property node specifies the default keywords for the pso_Feed_Import_FolderLayouts -->
+<property name="FolderLayouts">
+	<pvalues>
+	<pair value1="Annual Feed" value2="yyyy"/>
+	<pair value1="Monthly Feed" value2="yyyy/MM"/>
+	<pair value1="Weekly Feed" value2="yyyy/MM/W"/>
+	<pair value1="Daily By Week" value2="yyyy/MM/W/F"/>
+	<pair value1="Daily By Month" value2="yyyy/MM/d"/>
+	<pair value1="Daily By Year" value2="yyyy/D"/>
+	<pair value1="Hourly Feed" value2="yyyy/MM/d/h a"/>
+</pvalues>
+</property> 
+
+<property name="Import_Templates">
+	<pvalues>
+		<pair value1="RSS 2.0" value2="psoFeedImport_rss_2_0"/>
+	</pvalues>
+</property> 
+
+
+</SolutionConfig>
+</SolutionConfigurations>
