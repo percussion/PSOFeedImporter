@@ -48,6 +48,8 @@
       <dependency org="rome" name="rome" rev="1.0" conf="test->default" />
       <dependency org="rome" name="modules" rev="0.3.2" conf="test->default" />
       <dependency org="javax.ws.rs" name="jsr311-api" rev="1.0" />	
+      
+      
 		
 	</dependencies>
 </ivy-module>

@@ -65,7 +65,7 @@
 	<classpathentry kind="lib" path="ivylib/jsr311-api.jar"/>
 	<classpathentry kind="lib" path="ivylib/rxdeployer.jar"/>
 	<classpathentry kind="lib" path="ivylib/modules.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ContentREST-6.7"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ContentREST"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/PSOToolkit"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
