@@ -16,7 +16,7 @@
 		<fail unless="env.RHYTHMYX_HOME" message="You must set the RHYTHMYX_HOME environment variable"/>
 		<copy todir="${rhythmyx.lib}" verbose="true"> 
 			<fileset dir="${lib}">
-		          <include name="PSOFeedImporter-6.7.jar" /> 
+		          <include name="PSOFeedImporter-7.x.jar" /> 
 		     </fileset>
 			</copy>
 		<copy todir="${rhythmyx.WEB-INF}" verbose="true">
@@ -40,7 +40,6 @@
 			    	<include name="commons-jexl*.jar"/> 
 			    	<include name="jcr*.jar" /> 
 			    	<include name="commons-logging*.jar" /> 
-			    	<include name="commons-collections*.jar" /> 
 			    	<include name="commons-httpclient*.jar" /> 
 				</fileset>
 			    <fileset dir="${rhythmyx.home}/AppServer/lib/endorsed" >
@@ -48,6 +47,7 @@
 			    </fileset>
 				<fileset dir="${rhythmyx.home}/AppServer/server/rx/lib">
 					<include name="javax.servlet.jar" /> 
+			    	<include name="commons-collections*.jar" /> 
 		    	</fileset>				
 			</classpath>	
 		</java>

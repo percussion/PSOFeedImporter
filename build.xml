@@ -1,5 +1,5 @@
 <project name="PSOFeedImporter" default="dist" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
-	<description>PSO Feed Importer for Rhythmyx 6.7</description>
+	<description>PSO Feed Importer for Rhythmyx 7.x</description>
 	<!-- =================================
 	Download and install Ivy2 from http://ant.apache.org/ivy
     Modify your Ant runtime preferences in Eclipse to include the Ivy JARs
@@ -22,7 +22,7 @@
 	<property name="rhythmyx.home" location="${env.RHYTHMYX_HOME}"/>
 	<!-- name of Rhythmyx Service -->
 	<property name="rhythmyx.service" value="${env.RHYTHMYX_SERVICE}"/>
-	<property name="basename" value="PSOFeedImporter-6.7" /> 
+	<property name="basename" value="PSOFeedImporter-7.x" /> 
 	
 	
 	<property name="rhythmyx.deploy" value="${rhythmyx.home}/AppServer/server/rx/deploy" /> 
