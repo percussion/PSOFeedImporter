@@ -51,7 +51,11 @@ public class PSSynFeedEntry {
 	  * @return
 	  */
 	 public List getAuthorsList() {
-		 return entry.getAuthors();
+		 if(entry.getAuthors()!=null){
+			 return entry.getAuthors();
+		 }else{
+			 return new ArrayList<String>();
+		 }
 	 }
 	 
 	 /***
@@ -62,7 +66,7 @@ public class PSSynFeedEntry {
 		 String ret="";
 			Object a;
 			
-			//@TODO: Add Atom Support
+			if(entry != null && entry.getAuthors()!=null){
 			for(int i=0;i<entry.getAuthors().size();i++){
 				a = entry.getAuthors().get(i);
 				if(!(a instanceof SyndPerson)){
@@ -72,6 +76,7 @@ public class PSSynFeedEntry {
 						ret.concat("," + a.toString());
 				}
 			}
+			}
 			return ret;
 	 }
 	 /***
@@ -79,7 +84,11 @@ public class PSSynFeedEntry {
 		 * @return
 		 */
 	public List getCategoriesList(){
-			return entry.getCategories();
+			if(entry != null && entry.getCategories()!=null){
+				return entry.getCategories();
+			}else{
+				return new ArrayList<String>();
+			}
 		}
 
 		/***
@@ -90,14 +99,15 @@ public class PSSynFeedEntry {
 			String ret="";
 			SyndCategory a;
 		
-			for(int i=0;i<entry.getCategories().size();i++){
-				a = (SyndCategory)entry.getCategories().get(i);
-					if(ret=="")
-						ret = a.getName();
-					else
-						ret.concat("," + a.getName());
+			if(entry != null && entry.getCategories()!=null){
+				for(int i=0;i<entry.getCategories().size();i++){
+					a = (SyndCategory)entry.getCategories().get(i);
+						if(ret=="")
+							ret = a.getName();
+						else
+							ret.concat("," + a.getName());
+				}
 			}
-			
 			return ret;
 		}
 
@@ -109,14 +119,15 @@ public class PSSynFeedEntry {
 			String ret="";
 			Object a;
 			
-			//@TODO: Add Atom Support
-			for(int i=0;i<entry.getContributors().size();i++){
-				a = entry.getContributors().get(i);
-				if(!(a instanceof SyndPerson)){
-					if(ret=="")
-						ret = a.toString();
-					else
-						ret.concat("," + a.toString());
+			if(entry != null && entry.getContributors()!=null){
+				for(int i=0;i<entry.getContributors().size();i++){
+					a = entry.getContributors().get(i);
+					if(!(a instanceof SyndPerson)){
+						if(ret=="")
+							ret = a.toString();
+						else
+							ret.concat("," + a.toString());
+					}
 				}
 			}
 			return ret;
@@ -124,7 +135,11 @@ public class PSSynFeedEntry {
 		}
 		
 		public List getContributorsList() {
+			if(entry != null && entry.getContributors()!=null){
 			return entry.getContributors();
+			}else{
+				return new ArrayList();
+			}
 		}
 		     
 	    /***
@@ -133,12 +148,14 @@ public class PSSynFeedEntry {
 	     */
 	    public String getContents(){
 	    	String ret = "";
-	    	
-	    	for(int i=0;i<entry.getContents().size();i++){
-	    		if(ret =="")
-	    			ret = ((SyndContent)entry.getContents().get(i)).getValue();
-	    		else
-	    			ret = ret + "\r\n" + (String)entry.getContents().get(i);
+	    
+	    	if(entry != null && entry.getContents()!=null){
+		    	for(int i=0;i<entry.getContents().size();i++){
+		    		if(ret =="")
+		    			ret = ((SyndContent)entry.getContents().get(i)).getValue();
+		    		else
+		    			ret = ret + "\r\n" + (String)entry.getContents().get(i);
+		    	}
 	    	}
 	    	return ret;
 	    }
@@ -160,8 +177,10 @@ public class PSSynFeedEntry {
 public List<PSSynFeedEnclosure> getEnclosures() {
 	ArrayList<PSSynFeedEnclosure> ret = new ArrayList<PSSynFeedEnclosure>();
 
+	if(entry != null && entry.getEnclosures()!=null){
 	for(int i=0;i<entry.getEnclosures().size();i++){
 		ret.add(new PSSynFeedEnclosure((SyndEnclosure)entry.getEnclosures().get(i)));
+	}
 	}
 	return ret;
 }
@@ -184,8 +203,10 @@ public String getLink() {
  * @return
  */
 public List<String> getLinks(){
-	List<String> links = entry.getLinks();
-	return links;
+	if(entry != null && entry.getLinks()!=null)
+		return entry.getLinks();
+	else
+		return new ArrayList<String>();
 }
      
 public List<PSSynFeedMediaContent> getMediaRSSContent(){
