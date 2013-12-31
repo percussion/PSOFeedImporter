@@ -34,6 +34,7 @@
   	</PSXExtensionParamDef>
   	<suppliedResources /> 
   </Extension>
+  <!-- Import Jexl -->
   	<Extension categorystring="" context="global/percussion/user/" deprecated="no" handler="Java" name="psoFeedTools" restoreRequestParamsOnError="no">
 		<initParam name="com.percussion.user.description">PSO Feed utilities</initParam>
 		<initParam name="com.percussion.extension.version">1</initParam>
